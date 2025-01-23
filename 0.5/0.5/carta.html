@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleCarta.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flowers</title>
+</head>
+
+<body>
+    <div class="greetings">
+        <span>P</span>
+        <span>a</span>
+        <span>r</span>
+        <span>a</span>
+        <span>   </span>
+        <span>e</span>
+        <span>l</span>
+        <span>    </span>
+        <span>a</span>
+        <span>m</span>
+        <span>o</span>
+        <span>r</span>
+        <span>   </span>
+        <span>d</span>
+        <span>e</span>
+        <span>   </span>
+        <span>m</span>
+        <span>i</span>
+        <span>   </span>
+        <span>v</span>
+        <span>i</span>
+        <span>d</span>
+        <span>a</span>
+    </div>
+
+    <div class="button">
+        <button class="botones" onclick="showLetter()">CLICK AQUÍ</button>
+    </div>
+
+    <div class="letter-card" id="letterCard">
+        <div class="letter-content">
+            <h1><span class="flowers-icon"></span> ¡Hola Estrellita <span class="flowers-icon"> </span></h1>
+            <p>
+                Sé que esto es muy poco en comparación de todo lo que me has brindado, 
+                pero quiero darte las gracias por jamás dejarme solo, por siempre estar aquí.
+                Porque a pesar de todos los problemas, no te has rendido.
+                Quiero que sepas que eres lo más maravilloso que me ha pasado hasta ahora, que eres muy
+                especial para mí, mi motivación para seguir en todo, eres mi complemento.
+                Y pase lo que pase, siempre estaré contigo, en las buenas y en las malas.
+            </p>
+            <p>¡TE AMO DEMASIADOOO!</p>
+            <p>0.5 ❤️</p>
+        </div>
+    </div>
+
+    
+    <div class="image-container">
+       
+        <img src="img/amo.jpeg" alt="Flower 2" class="flower-img">
+        <img src="img/mi.jpeg" alt="Flower 3" class="flower-img">
+        <img src="img/niña.jpeg" alt="Flower 3" class="flower-img">
+        <img src="img/besos.jpg" alt="Flower 3" class="flower-img">
+        <img src="img/por.jpg" alt="Flower 3" class="flower-img">
+        <img src="img/guapa.JPG" alt="Flower 3" class="flower-img">
+       
+
+    </div>
+
+    <div class="button" id="nextButton" style="display: none;">
+        <button class="botones" onclick="window.location.href='flower.html'">🌻</button>
+    </div>
+
+    <script>
+        function showLetter() {
+            document.getElementById("letterCard").style.display = "block";
+            document.getElementById("letterCard").classList.add("open"); // Agrega la animación para abrir la carta
+            document.getElementById("nextButton").style.display = "block"; // Muestra el nuevo botón
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9d6d0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.greetings {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #402F4E;
+    margin-top: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.description {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #D7AC71;
+}
+
+.button {
+    margin-top: 40px;
+}
+
+.botones {
+    background-color: #D7AC71;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botones:hover {
+    background-color: #402F4E;
+}
+
+/* Estilos de la carta con forma de sobre */
+.letter-card {
+    display: none;
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transform: rotateX(-90deg); /* Inicialmente oculta con una rotación */
+    transform-origin: top;
+    transition: transform 1s ease-out;
+}
+
+.letter-card.open {
+    transform: rotateX(0deg); /* La carta se abre con la animación */
+}
+
+.letter-card:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 20px;
+    background-color: #D7AC71;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.letter-content {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.letter-card h1 {
+    font-size: 2.5rem;
+    color: #D7AC71;
+    margin-bottom: 20px;
+}
+
+.letter-card p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.letter-card .flowers-icon {
+    font-size: 3rem;
+    color: #D7AC71;
+}
+
+#nextButton {
+    margin-top: 20px;
+}
+.greetings span {
+    display: inline-block;
+    margin-right: 1mm; 
+}
+
+.greetings span:nth-of-type(5),
+.greetings span:nth-of-type(9),
+.greetings span:nth-of-type(14) {
+    margin-right: 5px; 
+}
+
+.flower-img {
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.8;
+    animation: floatAround 10s ease-in-out infinite;
+  }
+  
+  .flower-img:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+.flower-img:nth-child(2) {
+    top: 0;
+    right: 0;
+}
+
+.flower-img:nth-child(3) {
+    bottom: 0;
+    left: 0;
+}
+
+.flower-img:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+
+.flower-img:nth-child(5) {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.flower-img:nth-child(6) {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.flower-img:nth-child(7) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flower-img:nth-child(8) {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flower-img:nth-child(9) {
+    top: 25%;
+    left: 5%;
+}
+
+.flower-img:nth-child(10) {
+    bottom: 25%;
+    right: 5%;
+}
+
+.flower-img:nth-child(11) {
+    top: 10%;
+    left: 10%;
+}
+
+.flower-img:nth-child(12) {
+    top: 10%;
+    right: 10%;
+}
+
+.flower-img:nth-child(13) {
+    bottom: 10%;
+    left: 10%;
+}
+
+.flower-img:nth-child(14) {
+    bottom: 10%;
+    right: 10%;
+}
